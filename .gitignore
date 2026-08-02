@@ -1,0 +1,100 @@
+# ---- Rust ----
+/target
+**/target/
+**/*.rs.bk
+
+data/
+
+# ---- System files ----
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.stackdump
+
+# ---- Build artifacts ----
+Cargo.lock
+**/Cargo.lock
+**/target/
+target/
+
+# ---- Dioxus: Web target ----
+/public/build
+/dist/
+/assets/
+*.wasm
+*.js
+*.html
+
+# ---- Dioxus: Desktop target (tao/wry) ----
+/out/
+/build/
+*.exe
+*.app
+*.dmg
+*.deb
+*.rpm
+
+# ---- Dioxus: Mobile target ----
+/platforms/
+*.aab
+*.ipa
+
+# ---- Dioxus: iOS build ----
+ios/build/
+ios/Pods/
+
+# ---- Environment ----
+.env
+.env.local
+.env.production
+.env.development
+
+# ---- Editor & Termux ----
+*~
+.*.sw[po]
+.rust-analyzer
+/.idea/
+/.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ---- Config & security ----
+.aider.conf.yml
+*.conf
+*.pem
+*.key
+*.crt
+*.cert
+**/config/**
+**/secrets/
+/secrets/
+/config/
+
+# ---- Runtime ----
+*.log
+*.sock
+*.pid
+yggdrasil.conf
+yggdrasil
+
+# ---- Debug & system ----
+*.dSYM/
+*.map
+*.pdb
+
+# ---- Logs ----
+logs
+*.log
+npm-debug.log*
+yarn-debug.log
+yarn-error.log*
+
+# ---- Testing ----
+coverage/
+*.gcov
+*.lcov
+
+AGENTS.md
+.aider*
