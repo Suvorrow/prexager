@@ -1,0 +1,16 @@
+[package]
+name = "prexager-vnu"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+description.workspace = true
+license = "GPL-3.0-only"
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+uuid.workspace = true
