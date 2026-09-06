@@ -30,7 +30,7 @@ impl PropertyKey {
         self.0.get()
     }
 
-    // Well-known fundamentalproperties are reserved in the lower ID space.
+    // The fundamental properties are reserved in the lower ID space.
     // The Dictionary maps these to human-readable strings for the UI/LLM.
     pub const DIMENSIONALITY: Self = Self(NonZeroU32::MIN); // 1
     pub const HAS_VOLUME: Self = Self(NonZeroU32::new(2).unwrap());
@@ -43,8 +43,8 @@ impl PropertyKey {
 /// A strongly-typed property value optimized for constraint math.
 ///
 /// # Note on 'Eq' and 'Hash'
-/// This enum intentionally does NOT implement 'Eq' or 'Hash'. The 'Float(f64)'
-/// variant contains an IEEE 754 floating-ppoint number, which does not support
+/// This enum intentionally does NOT implement `Eq` or `Hash`. The 'Float(f64)'
+/// variant contains an IEEE 754 floating-point number, which does not support
 /// total ordering or hashing (due to 'NaN' and '-0.0' vs '0.0'). The Constraint
 /// Engine must use explicit epsilon comparisons for float bounds.
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
@@ -59,7 +59,7 @@ pub enum PropertyValue {
     Vector(Vec<f64>),
     /// UI artifacts, labels, and descriptions. Kept out of the hot math path.
     Text(String),
-    /// Explicit absence of value.
+    /// Explicit absence of a value.
     Null,
 }
 
@@ -87,13 +87,13 @@ impl PropertyValue {
     pub const fn as_f64(&self) -> Option<f64> {
         match self {
             Self::Float(f) => Some(*f),
-            // Allow implicit widening from Int to Float for constraint match
+            // Allow implicit widening from Int to Float for constraint math
             Self::Int(i) => Some(*i as f64),
             _ => None,
         }
     }
 
-    /// Attampts to extract a slice of floats
+    /// Attempts to extract a slice of floats
     #[inline]
     pub const fn as_vector(&self) -> Option<&[f64]> {
         match self {
