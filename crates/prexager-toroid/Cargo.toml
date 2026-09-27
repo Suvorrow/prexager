@@ -1,0 +1,8 @@
+[package]
+name = "prexager-toroid"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+description.workspace = true
+
+[dependencies]
