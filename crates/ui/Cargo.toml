@@ -1,9 +1,9 @@
 [package]
 name = "ui"
-version.workspace = true
-edition.workspace = true
-rust-version.workspace = true
-license.workspace = true
+version = { workspace = true }
+edition = { workspace = true }
+rust-version = { workspace = true }
+license = { workspace = true }
 description = "Dioxus-based user interface components for Prexager project"
 
 [lints]
@@ -22,11 +22,11 @@ desktop = ["dioxus/desktop"]
 #================ Dioxus framework ================
 dioxus = { workspace = true, features = ["router"] }
 dioxus-desktop = { workspace = true, features = ["transparent"] }
-dioxus-router.workspace = true
+dioxus-router = { workspace = true }
 
 #================ Workspace crates
-file-picker.workspace = true
+file-picker = { workspace = true }
 
 [build-dependencies]
-rsass.workspace = true
-glob.workspace = true
+rsass = { workspace = true }
+glob = { workspace = true }

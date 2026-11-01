@@ -8,7 +8,7 @@
 
 use dioxus::prelude::*;
 use dioxus_router::Router;
-use prexager_core::routes::Route;
+use ui::routes::Route;
 
 // Define the root router
 #[component]

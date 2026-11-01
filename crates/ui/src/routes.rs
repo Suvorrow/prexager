@@ -2,12 +2,12 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 #![allow(non_snake_case)]
+use crate::components::dropdown::{DropdownPanel, dropdown_header, dropdown_item};
+use crate::components::{DataView, HomeView, SettingsView, ToolsView};
 use crate::state::{ActiveToolType, DropdownType, UiState};
 use dioxus::desktop::{use_window, window};
 use dioxus::prelude::*;
 use dioxus_router::{Outlet, Routable};
-use ui::components::dropdown::{DropdownPanel, dropdown_header, dropdown_item};
-use ui::components::{DataView, HomeView, SettingsView, ToolsView};
 
 #[derive(Clone, Copy, PartialEq)]
 enum ActiveNavButton {

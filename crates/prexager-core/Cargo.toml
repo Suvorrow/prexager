@@ -1,9 +1,9 @@
 [package]
 name = "prexager-core"
-version.workspace = true
-rust-version.workspace = true
-edition.workspace = true
-license.workspace = true
+version = { workspace = true }
+rust-version = { workspace = true }
+edition = { workspace = true }
+license = { workspace = true }
 
 [lib]
 path = "src/core.rs"
@@ -16,14 +16,10 @@ workspace = true
 default = []
 
 [dependencies]
-#================ Workspace crates ================
-ui.workspace = true
-
-#================ Dioxus framework ================
-dioxus.workspace = true
-dioxus-router.workspace = true
-
 #================ Serialization ================
-serde.workspace = true
+serde = { workspace = true }
+
+#================ Error handling ================
+thiserror = { workspace = true }
 
 [dev-dependencies]
