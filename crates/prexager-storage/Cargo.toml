@@ -1,0 +1,23 @@
+[package]
+name = "prexager-storage"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+description.workspace = true
+
+[dependencies]
+# ======== Internal dependency ========
+prexager-core = { workspace = true }
+
+# ======== External dependencies ========
+async-trait = { workspace = true }
+chrono = { workspace = true }
+duckdb = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+
+# ======== Crate-specific dependency ========
+petgraph = "0.6"
