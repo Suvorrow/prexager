@@ -20,11 +20,11 @@ authors = ["Mikhail Suvorau (Suvorrow) <suvoraum@gmail.com>"]
 
 [workspace.dependencies]
 #================ Workspace member crates ================
-prexager-app = { path = "crates/prexager-app" }
-prexager-core = { path = "crates/prexager-core" }
-prexager-io = { path = "crates/prexager-io" }
-file-picker = { path = "crates/file-picker" }
-ui = { path = "crates/ui" }
+prexager-app = { version = "0.1.0", path = "crates/prexager-app" }
+prexager-core = { version = "0.1.0", path = "crates/prexager-core" }
+prexager-io = { version = "0.1.0", path = "crates/prexager-io" }
+file-picker = { version = "0.1.0", path = "crates/file-picker" }
+ui = { version = "0.1.0", path = "crates/ui" }
 
 #================ External crates ================
 #================ Dioxus (UI framework) ================

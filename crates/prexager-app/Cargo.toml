@@ -1,25 +1,31 @@
 [package]
-name = "prexager-app"
+name = "prexager"
 version = { workspace = true }
 edition = { workspace = true }
 rust-version = { workspace = true }
 license = { workspace = true }
 authors = { workspace = true }
-description = "Morpho-dynamic topological analysis of genomic data"
-default-run = "prexager-app"
+description = "A desktop application for the interactive, multi-scale exploration of 3D genome architecture—from whole-nucleus chromosome territories down to molecular structures."
+repository = "https://github.com/Suvorrow/prexager"
+keywords = ["genomics", "hi-c", "3d-genome", "bioinformatics", "visualization", "rust"]
+categories = ["science", "visualization", "gui"]
+exclude = [
+    "/target",
+    "/assets/data",
+    "*.hic",
+    "*.cool",
+    "*.mcool",
+]
 
 [lints]
 workspace = true
-
-[[bin]]
-name = "prexager-app"
-path = "src/main.rs"
 
 [dependencies]
 #================ Workspace crates ================
 prexager-core = { workspace = true }
 ui = { workspace = true }
 file-picker = { workspace = true }
+prexager-io = { workspace = true }
 
 #================ Dioxus ================
 dioxus = { workspace = true }
@@ -35,7 +41,6 @@ serde_json = { workspace = true }
 
 #================ Error handling ================
 anyhow = { workspace = true }
-thiserror = { workspace = true }
 
 #================ Logging ================
 tracing = { workspace = true }
