@@ -1,5 +1,5 @@
 [package]
-name = "file-picker"
+name = "prexager-file-picker"
 edition.workspace = true
 version.workspace = true
 rust-version.workspace = true

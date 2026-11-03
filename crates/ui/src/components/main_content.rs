@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 use dioxus::prelude::*;
-use prexager::{GenomicTarget, prexager_algorithms::compute_topological_risk};
 
 #[component]
 pub fn MainContent() -> Element {

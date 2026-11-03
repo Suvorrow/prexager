@@ -24,7 +24,7 @@ workspace = true
 #================ Workspace crates ================
 prexager-core = { workspace = true }
 ui = { workspace = true }
-file-picker = { workspace = true }
+prexager-file-picker = { workspace = true }
 prexager-io = { workspace = true }
 
 #================ Dioxus ================

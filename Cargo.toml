@@ -6,7 +6,7 @@ members = [
     "crates/prexager-app",
     "crates/prexager-core",
     "crates/prexager-io",
-    "crates/file-picker",
+    "crates/prexager-file-picker",
     "crates/ui",
 ]
 default-members = ["crates/prexager-app"]
@@ -23,7 +23,7 @@ authors = ["Mikhail Suvorau (Suvorrow) <suvoraum@gmail.com>"]
 prexager-app = { version = "0.1.0", path = "crates/prexager-app" }
 prexager-core = { version = "0.1.0", path = "crates/prexager-core" }
 prexager-io = { version = "0.1.0", path = "crates/prexager-io" }
-file-picker = { version = "0.1.0", path = "crates/file-picker" }
+prexager-file-picker = { version = "0.1.0", path = "crates/prexager-file-picker" }
 ui = { version = "0.1.0", path = "crates/ui" }
 
 #================ External crates ================

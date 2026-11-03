@@ -24,8 +24,8 @@ dioxus = { workspace = true, features = ["router"] }
 dioxus-desktop = { workspace = true, features = ["transparent"] }
 dioxus-router = { workspace = true }
 
-#================ Workspace crates
-file-picker = { workspace = true }
+#================ Workspace crates ================
+prexager-file-picker = { workspace = true }
 
 [build-dependencies]
 rsass = { workspace = true }
