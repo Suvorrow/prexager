@@ -17,6 +17,7 @@ rust-version = "1.85"
 edition = "2024"
 license = "GPL-3.0-only"
 authors = ["Mikhail Suvorau (Suvorrow) <suvoraum@gmail.com>"]
+repository = "https://github.com/Suvorrow/prexager"
 
 [workspace.dependencies]
 #================ Workspace member crates ================

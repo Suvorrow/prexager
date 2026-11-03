@@ -1,9 +1,9 @@
 [package]
 name = "prexager-file-picker"
-edition.workspace = true
-version.workspace = true
-rust-version.workspace = true
-license.workspace = true
+edition = { workspace = true }
+version = { workspace = true }
+rust-version = { workspace = true }
+license = { workspace = true }
 description = "Native file dialog utilities for Prexager software"
 
 [lints]
@@ -17,6 +17,6 @@ doctest = false
 default = []
 
 [dependencies]
-rfd.workspace = true
+rfd = { workspace = true }
 
 [dev-dependencies]

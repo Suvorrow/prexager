@@ -6,7 +6,7 @@ rust-version = { workspace = true }
 license = { workspace = true }
 authors = { workspace = true }
 description = "A desktop application for the interactive, multi-scale exploration of 3D genome architecture—from whole-nucleus chromosome territories down to molecular structures."
-repository = "https://github.com/Suvorrow/prexager"
+repository = { workspace = true }
 keywords = ["genomics", "hi-c", "3d-genome", "bioinformatics", "visualization", "rust"]
 categories = ["science", "visualization", "gui"]
 exclude = [
