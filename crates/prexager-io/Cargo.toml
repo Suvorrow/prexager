@@ -10,6 +10,11 @@ repository = { workspace = true }
 [lints]
 workspace = true
 
+[lib]
+name = "prexager_io"
+path = "src/prexager_io.rs"
+doctest = false
+
 [dependencies]
 prexager-core = { workspace = true }
 cooler-rs = { workspace = true }
