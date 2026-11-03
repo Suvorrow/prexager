@@ -10,7 +10,8 @@ description = "Native file dialog utilities for Prexager software"
 workspace = true
 
 [lib]
-path = "src/file_picker.rs"
+name = "prexager_file_picker"
+path = "src/prexager_file_picker.rs"
 doctest = false
 
 [features]
