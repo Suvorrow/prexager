@@ -1,0 +1,15 @@
+[package]
+name = "prexager"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "GPL-3.0-only"
+authors = ["Mikhail Suvorau (Suvorrow) <suvoraum@gmail.com>"]
+description = "A desktop application for the interactive, multi-scale exploration of 3D genome architecture—from whole-nucleus chromosome territories down to molecular structures."
+repository = "https://github.com/Suvorrow/prexager"
+readme = "README.md"
+keywords = ["genomics", "hi-c", "3d-genome", "visualization", "desktop-app"]
+categories = ["science", "visualization"]
+
+[lints]
+workspace = true

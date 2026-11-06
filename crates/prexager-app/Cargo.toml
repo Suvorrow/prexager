@@ -1,11 +1,12 @@
 [package]
-name = "prexager"
+name = "prexager-app"
 version.workspace = true
 edition.workspace = true
 rust-version.workspace = true
 license.workspace = true
 authors.workspace = true
 description = "A desktop application for the interactive, multi-scale exploration of 3D genome architecture—from whole-nucleus chromosome territories down to molecular structures."
+publish = false
 repository.workspace = true
 keywords = ["genomics", "hi-c", "3d-genome", "bioinformatics", "visualization", "rust"]
 categories = ["science", "visualization", "gui"]
@@ -19,6 +20,10 @@ exclude = [
 
 [lints]
 workspace = true
+
+[[bin]]
+name = "prexager"
+path = "src/main.rs"
 
 [dependencies]
 #================ Workspace crates ================

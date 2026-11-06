@@ -3,6 +3,7 @@ name = "prexager-file-picker"
 edition.workspace = true
 version.workspace = true
 rust-version.workspace = true
+publish = false
 license.workspace = true
 description = "Native file dialog utilities for Prexager software"
 

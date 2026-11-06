@@ -3,6 +3,7 @@
 [workspace]
 resolver = "2"
 members = [
+    "crates/prexager",
     "crates/prexager-app",
     "crates/prexager-core",
     "crates/prexager-io",
