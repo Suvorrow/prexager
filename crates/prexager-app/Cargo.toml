@@ -1,12 +1,12 @@
 [package]
 name = "prexager"
-version = { workspace = true }
-edition = { workspace = true }
-rust-version = { workspace = true }
-license = { workspace = true }
-authors = { workspace = true }
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
 description = "A desktop application for the interactive, multi-scale exploration of 3D genome architecture—from whole-nucleus chromosome territories down to molecular structures."
-repository = { workspace = true }
+repository.workspace = true
 keywords = ["genomics", "hi-c", "3d-genome", "bioinformatics", "visualization", "rust"]
 categories = ["science", "visualization", "gui"]
 exclude = [
@@ -22,26 +22,26 @@ workspace = true
 
 [dependencies]
 #================ Workspace crates ================
-prexager-core = { workspace = true }
-ui = { workspace = true }
-prexager-file-picker = { workspace = true }
-prexager-io = { workspace = true }
+prexager-core.workspace = true
+prexager-ui.workspace = true
+prexager-file-picker.workspace = true
+prexager-io.workspace = true
 
 #================ Dioxus ================
-dioxus = { workspace = true }
-dioxus-desktop = { workspace = true }
-dioxus-router = { workspace = true }
+dioxus.workspace = true
+dioxus-desktop.workspace = true
+dioxus-router.workspace = true
 
 #================ Core computing ================
-ndarray = { workspace = true }
+ndarray.workspace = true
 
 #================ Serialization ================
-serde = { workspace = true }
-serde_json = { workspace = true }
+serde.workspace = true
+serde_json.workspace = true
 
 #================ Error handling ================
-anyhow = { workspace = true }
+anyhow.workspace = true
 
 #================ Logging ================
-tracing = { workspace = true }
-tracing-subscriber = { workspace = true }
+tracing.workspace = true
+tracing-subscriber.workspace = true

@@ -1,10 +1,10 @@
 [package]
 name = "prexager-core"
-version = { workspace = true }
-rust-version = { workspace = true }
-edition = { workspace = true }
-license = { workspace = true }
-repository = { workspace = true }
+version.workspace = true
+rust-version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
 
 [lib]
 name = "prexager_core"
@@ -19,9 +19,9 @@ default = []
 
 [dependencies]
 #================ Serialization ================
-serde = { workspace = true }
+serde.workspace = true
 
 #================ Error handling ================
-thiserror = { workspace = true }
+thiserror.workspace = true
 
 [dev-dependencies]

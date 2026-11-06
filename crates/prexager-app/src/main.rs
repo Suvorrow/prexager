@@ -37,7 +37,7 @@ fn init_logging() -> Result<()> {
 // ---- Application Setup ----
 fn setup() -> Result<()> {
     // Get the embedded CSS content from the ui crate
-    let css_content = ui::get_compiled_css();
+    let css_content = prexager_ui::get_compiled_css();
 
     // Configure the desktop window
     let window = WindowBuilder::new()
